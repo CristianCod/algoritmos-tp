@@ -83,14 +83,14 @@ def multiplicacion(valor1, valor2):
     suma=0
     if ((a < 0 and b < 0)):
         for i in range(b, 0):
-            suma += - a
+            suma = suma - a
     elif (a > 0 and b < 0) or (a > 0 and b > 0):
         for i in range(0, a):
-            suma += b
+            suma =suma+ b
     else:
         if (b > 0 and a < 0):
             for i in range(0, b):
-                suma += a
+                suma =suma+ a
     print("La multiplicacion es", suma)
 
     return suma
@@ -169,7 +169,7 @@ def solicitud():
     valor_1=input("Ingrese un Parametro: ")
     valor_2=input("Ingrese un Parametro: ")
     
-    return valor_1=="",valor_2==""
+    return valor_1,valor_2
 
 def imprimir(parametro_1="", parametro_2=""):
 
