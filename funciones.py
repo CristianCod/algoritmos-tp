@@ -1,4 +1,4 @@
-
+#La deje de usar.
 '''
 
 def string_corto(valor1):
@@ -20,7 +20,7 @@ def string_corto(valor1):
     print("La palabra mas corta es: ", palabra_corta)
     return palabra_corta, long_palabra
 '''
-
+#La acabo de ver, parece andar bien
 def string_corto():
     
     cadena=input("Ingrese una cadena de texto: ")
@@ -47,7 +47,7 @@ def string_corto():
     return palabras_cortas
 
 #string_corto()
-
+#La acabo de ver, parece andar bien
 def string_largo():
     
     cadena=input("Ingrese una cadena de texto: ")
@@ -72,10 +72,20 @@ def string_largo():
     print ("Las palabras largas son: ",lista_auxiliar)
     palabras_largas=lista_auxiliar
     return palabras_largas  
-#string_largo()
+#La acabo hacer y ver, parece andar bien
+def contar_cadena():
+    cadena=input("Ingrese una cadena de texto: ")
+    trans=cadena.maketrans(".,;!","    ")
+    cadena=cadena.translate(trans)
+    lista_cadena=cadena.split()
+    cantidad_palabras=len(lista_cadena)
+    print("Hay",cantidad_palabras, "palabras en la cadena de texto.")
+    
+    return cantidad_palabras
+#contar_cadena()
 
 
-##################################################3
+#Ni la mire, pero parce ok.
 def multiplicacion(valor1, valor2):
     a=int(valor1)
     b=int(valor2)
@@ -83,18 +93,18 @@ def multiplicacion(valor1, valor2):
     suma=0
     if ((a < 0 and b < 0)):
         for i in range(b, 0):
-            suma = suma - a
+            suma += - a
     elif (a > 0 and b < 0) or (a > 0 and b > 0):
         for i in range(0, a):
-            suma =suma+ b
+            suma += b
     else:
         if (b > 0 and a < 0):
             for i in range(0, b):
-                suma =suma+ a
+                suma += a
     print("La multiplicacion es", suma)
 
     return suma
-####################
+#No revise mucho
 def potencias(valor1,valor2 ):
     c=int(valor1)
     d=int(valor2)
@@ -112,7 +122,7 @@ def potencias(valor1,valor2 ):
         potencia = 1 / multi
     print("La potencia es", potencia)
     return potencia
-#######################
+#No revise si devuelve siempre
 def division(valor1, valor2):
     dividendo=int(valor1)
     sor=int(valor2)
@@ -145,7 +155,8 @@ def division(valor1, valor2):
     print("El resto es:", resto)
     return div, resto
 ######################
-
+#La deje de usar
+'''
 def contar_palabras():
     cadena=input("Ingrese una cadena de texto: ")
 
@@ -160,10 +171,12 @@ def contar_palabras():
     print("Hay ",contador_palabras, "palabras en la cadena de texto.")
 
     return contador_palabras
-
+'''
 
     
-
+#Solo la use en funciones con enteros, para cadenas no. Habia problemas con setear en el
+#Hay que pasasrle un msj para cada funcion int.
+#return un valor generico vacio y otro con cadena. No probe pero con un if se podria solucionar.
 def solicitud():
 
     valor_1=input("Ingrese un Parametro: ")
