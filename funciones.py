@@ -70,7 +70,7 @@ def string_largo():
           palabra_larga=i
     
     print ("Las palabras largas son: ",lista_auxiliar)
-    palabras_cortas=lista_auxiliar
+    palabras_largas=lista_auxiliar
     return palabras_largas  
 #string_largo()
 

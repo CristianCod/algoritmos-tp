@@ -20,13 +20,7 @@ def sub_menu_num():
     print("3 - Potencia")
     print("4 - Volver al Menú principal")
     opcion=int(input("Ingrese una Opcion: "))
-
-
-
-
-
-
-
+    
     return opcion
 
 def sub_menu_let():
